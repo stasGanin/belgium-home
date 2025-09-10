@@ -2,11 +2,11 @@
   let isOpen = false;
 
   // Blokkeer scroll van de site bij open modal
-  $: {
-    if (isOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "";
+  
+
+  function handleKeydown(e) {
+    if (e.key === "Escape") {
+      isOpen = false;
     }
   }
 </script>
@@ -34,7 +34,9 @@
       class="fixed inset-0 bg-black/80 flex items-center justify-center z-50"
       role="dialog"
       aria-label="Plattegrond"
+      tabindex="-1"
       on:click={() => (isOpen = false)}
+      on:keydown={handleKeydown}
     >
       <div
         class="relative max-w-6xl w-full h-full flex justify-center overflow-y-auto p-8"

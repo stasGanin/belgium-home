@@ -54,8 +54,4 @@
   {/if}
 </header>
 
-<style>
-  html {
-    scroll-behavior: smooth;
-  }
-</style>
+
