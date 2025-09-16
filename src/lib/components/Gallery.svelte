@@ -18,16 +18,16 @@
     { label: "Keuken", icon: Home, src: ["/images/kitchen.webp"] },
 
     { label: "Badkamer", icon: Bath, src: ["/images/masterBathroom_1.webp", "/images/masterBathroom_2.webp", "/images/masterBathroom_3.webp"] },
-    { label: "Gastentoilet", icon: Bath, src: ["/images/guestToilet.webp"] },
+    { label: "Toilet", icon: Bath, src: ["/images/guestToilet.webp"] },
 
     { label: "Woonkamer", icon: Sofa, src: ["/images/livingRoom_1.webp", "/images/livingRoom_2.webp"] },
-    { label: "Lobby", icon: LayoutDashboard, src: ["/images/lobby_1.webp", "/images/lobby_2.webp", "/images/lobby_3.webp"] },
+    { label: "Ingang", icon: LayoutDashboard, src: ["/images/lobby_1.webp", "/images/lobby_2.webp", "/images/lobby_3.webp"] },
 
     { label: "Garage", icon: DoorOpen, src: ["/images/garage_1.webp", "/images/garage_2.webp"] },
-    { label: "Ingang", icon: DoorOpen, src: ["/images/entrance.webp"] },
+    
 
-    { label: "Gang", icon: LayoutDashboard, src: ["/images/corridor_1.webp", "/images/corridor_2.webp", "/images/corridor_3.webp", "/images/corridor_4.webp"] },
-    { label: "Stookruimte", icon: LayoutDashboard, src: ["/images/boilerRoom_1.webp", "/images/boilerRoom_2.webp"] },
+    { label: "Inkomhal", icon: LayoutDashboard, src: ["/images/corridor_1.webp", "/images/corridor_2.webp", "/images/corridor_3.webp", "/images/corridor_4.webp"] },
+    { label: "Centrale verwarming en wasplaats", icon: LayoutDashboard, src: ["/images/boilerRoom_1.webp", "/images/boilerRoom_2.webp"] },
 
     { label: "Terras", icon: Sun, src: ["/images/terrace.webp"] },
     { label: "Straatkant", icon: Trees, src: ["/images/roadSide.webp"] },

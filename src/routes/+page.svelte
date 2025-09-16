@@ -7,12 +7,14 @@
   import ContactForm from "$lib/components/ContactForm.svelte";
   import Footer from "$lib/components/Footer.svelte";
   import Specifications from "$lib/components/Specifications.svelte";
+  import Docs from "$lib/components/Docs.svelte";
 </script>
 
 <Header />
 
 <main >
   <Hero />
+  <Docs />
   <Specifications />
   <Gallery />
   <Plan />
