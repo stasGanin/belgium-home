@@ -1,13 +1,36 @@
 <script>
-  import { BedDouble, Bath, Sun, DoorOpen, Home, ChevronLeft, ChevronRight } from "lucide-svelte";
+  import {
+    BedDouble,
+    Bath,
+    Sun,
+    DoorOpen,
+    Home,
+    Trees,
+    Sofa,
+    LayoutDashboard,
+    ChevronLeft,
+    ChevronRight,
+  } from "lucide-svelte";
 
   const images = [
-    { label: "Slaapkamer 1", icon: BedDouble, src: ["/images/bedroom1.png", "/images/bedroom1_1.png"] },
-    { label: "Slaapkamer 2", icon: BedDouble, src: ["/images/bedroom2.png"] },
-    { label: "Keuken", icon: Home, src: ["/images/kitchen.png"] },
-    { label: "Badkamer", icon: Bath, src: ["/images/masterBathroom_1.png", "/images/masterBathroom_2.png", "/images/masterBathroom_3.png"] },
-    { label: "Terras", icon: Sun, src: ["/images/terrace.png"] },
-    { label: "Garage", icon: DoorOpen, src: ["/images/garage.png"] },
+    { label: "Slaapkamer 1", icon: BedDouble, src: ["/images/bedroom1.webp", "/images/bedroom1_1.webp"] },
+    { label: "Slaapkamer 2", icon: BedDouble, src: ["/images/bedroom2.webp"] },
+    { label: "Keuken", icon: Home, src: ["/images/kitchen.webp"] },
+
+    { label: "Badkamer", icon: Bath, src: ["/images/masterBathroom_1.webp", "/images/masterBathroom_2.webp", "/images/masterBathroom_3.webp"] },
+    { label: "Gastentoilet", icon: Bath, src: ["/images/guestToilet.webp"] },
+
+    { label: "Woonkamer", icon: Sofa, src: ["/images/livingRoom_1.webp", "/images/livingRoom_2.webp"] },
+    { label: "Lobby", icon: LayoutDashboard, src: ["/images/lobby_1.webp", "/images/lobby_2.webp", "/images/lobby_3.webp"] },
+
+    { label: "Garage", icon: DoorOpen, src: ["/images/garage_1.webp", "/images/garage_2.webp"] },
+    { label: "Ingang", icon: DoorOpen, src: ["/images/entrance.webp"] },
+
+    { label: "Gang", icon: LayoutDashboard, src: ["/images/corridor_1.webp", "/images/corridor_2.webp", "/images/corridor_3.webp", "/images/corridor_4.webp"] },
+    { label: "Stookruimte", icon: LayoutDashboard, src: ["/images/boilerRoom_1.webp", "/images/boilerRoom_2.webp"] },
+
+    { label: "Terras", icon: Sun, src: ["/images/terrace.webp"] },
+    { label: "Straatkant", icon: Trees, src: ["/images/roadSide.webp"] },
   ];
 
   let active = images[0];
@@ -36,18 +59,21 @@
 
   <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-4 gap-8 items-start">
     <!-- Knoppen links -->
-    <div class="flex flex-col gap-4 md:col-span-1">
-      {#each images as category}
-        <button
-          on:click={() => selectCategory(category)}
-          class="flex items-center gap-3 px-4 py-3 rounded-xl shadow-md bg-white hover:bg-gray-100 transition text-left
-          {active.label === category.label ? 'ring-2 ring-blue-500' : ''}"
-        >
-          <svelte:component this={category.icon} size={22} />
-          <span class="font-medium">{category.label}</span>
-        </button>
-      {/each}
-    </div>
+    <div class="flex flex-col gap-4 md:col-span-1 max-h-[600px] overflow-y-auto pr-2">
+  {#each images as category}
+    <button
+      on:click={() => selectCategory(category)}
+      class="w-full flex items-center gap-3 px-4 py-3 rounded-xl shadow-md transition text-left
+      {active.label === category.label 
+        ? 'bg-gradient-to-r from-blue-100 to-blue-200 text-blue-800' 
+        : 'bg-white hover:bg-gray-100'}"
+    >
+      <svelte:component this={category.icon} size={22} />
+      <span class="font-medium">{category.label}</span>
+    </button>
+  {/each}
+</div>
+
 
     <!-- Foto rechts -->
     <div class="md:col-span-3 flex justify-center relative">
