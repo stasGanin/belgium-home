@@ -5,7 +5,7 @@
 <section
   id="hero"
   class="relative h-[90vh] flex items-center justify-center text-white"
-  style="background-image: url('/images/roadSide.webp'); background-size: cover; background-position: center;"
+  style="background-image: url('/images/roadSide.png'); background-size: cover; background-position: center;"
 >
   <!-- Gradiënt overlay -->
   <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/70"></div>
