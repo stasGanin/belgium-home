@@ -2,20 +2,7 @@
   import { ChevronDown, ChevronUp } from "lucide-svelte";
 
   const specs = [
-    {
-      title: "Constructie & Garage",
-      content: `
-Traditionele, volledig gemetste constructie met buitenmuren in gevelsteen en binnenmuren in witte silicaatsteen.
-
-Dakconstructie in glad betongewelf, met roofing en aluminium dakranden in groene kleur.
-
-Garage:
-- Hoogwaardige geïsoleerde sectionaalpoort van Crawford, elektrisch bediend (2 afstandsbedieningen inbegrepen).
-- Veiligheidssystemen: fotocelbeveiliging, ingebouwde verlichting, manuele vergrendeling, veiligheidsstootbanden.
-- Voorzien van eigen stopcontact, aparte motor-aansluiting en TL-armatuur.
-- Aangesloten op de individuele elektriciteitsmeter van het appartement.
-      `
-    },
+    
     {
       title: "Vloeren & Wanden",
       content: `
@@ -96,6 +83,17 @@ Inbouwtoestellen Siemens:
 
 Werkbladen in massief gepolierd graniet (3 cm dik).
 Dubbele inox spoelbak met afdruipblad (merk Franke, krasvrij) en designmengkraan met uittrekbare flexibele kraankop.
+      `
+    },
+    {
+      title: "Garage",
+      content: `
+ • Traditionele, volledig gemetste constructie met buitenmuren in gevelsteen en binnenmuren in witte silicaatsteen.
+ • Dakconstructie in glad betongewelf, met roofing en aluminium dakranden in groene kleur.
+ • Hoogwaardige geïsoleerde sectionaalpoort van Crawford, elektrisch bediend (2 afstandsbedieningen inbegrepen).
+ • Veiligheidssystemen: fotocelbeveiliging, ingebouwde verlichting, manuele vergrendeling, veiligheidsstootbanden.
+ • Voorzien van eigen stopcontact, aparte motor-aansluiting en TL-armatuur.
+ • Aangesloten op de individuele elektriciteitsmeter van het appartement.
       `
     }
   ];
