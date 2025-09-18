@@ -106,7 +106,7 @@ Dubbele inox spoelbak met afdruipblad (merk Franke, krasvrij) en designmengkraan
 </script>
 
 <section id="specs" class="py-16 bg-gray-50">
-  <h2 class="text-3xl font-bold text-center mb-10">Technische specificaties</h2>
+  <h2 class="text-3xl font-bold text-center mb-10">Technische Details</h2>
 
   <div class="max-w-3xl mx-auto flex flex-col gap-6 px-4">
     {#each specs as spec, i}

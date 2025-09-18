@@ -30,7 +30,7 @@
     { label: "Centrale verwarming en wasplaats", icon: LayoutDashboard, src: ["/images/boilerRoom_1.webp", "/images/boilerRoom_2.webp"] },
 
     { label: "Terras", icon: Sun, src: ["/images/terrace.webp"] },
-    { label: "Straatkant", icon: Trees, src: ["/images/roadSide.webp"] },
+    { label: "Straatkant", icon: Trees, src: ["/images/roadSideH.jpg"] },
   ];
 
   let active = images[0];

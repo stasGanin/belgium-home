@@ -12,7 +12,7 @@
 </script>
 
 <section id="plan" class="py-16">
-  <h2 class="text-3xl font-bold text-center mb-8">Plattegrond</h2>
+  <h2 class="text-3xl font-bold text-center mb-8">Het plan van het appartement</h2>
 
   <div class="max-w-4xl mx-auto px-4">
     <button

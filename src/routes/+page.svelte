@@ -8,17 +8,20 @@
   import Footer from "$lib/components/Footer.svelte";
   import Specifications from "$lib/components/Specifications.svelte";
   import Docs from "$lib/components/Docs.svelte";
+  import Location from "$lib/components/Location.svelte";
 </script>
 
 <Header />
 
 <main >
   <Hero />
+  <Description />
+  <Location />
   <Docs />
   <Specifications />
   <Gallery />
   <Plan />
-  <Description />
+  
   <ContactForm />
   <Footer />
 </main>

@@ -1,5 +1,5 @@
 <script>
-  import { Phone, Bed, Bath, Ruler, Square } from "lucide-svelte";
+  import { Phone, Bed, Bath, Ruler, Square, Tag } from "lucide-svelte";
 </script>
 
 <section
@@ -14,14 +14,14 @@
   <div class="relative z-10 px-6 max-w-3xl text-center">
     <div class="bg-black/40 backdrop-blur-sm rounded-2xl p-8 shadow-xl">
       <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
-        Uw droomhuis in België
+        Uw nieuwe droomwoning
       </h1>
       <p class="text-lg md:text-2xl mb-8 text-gray-200">
-        Ruime en moderne woning in een gezellige buurt — klaar voor nieuwe eigenaars
+        Een luxueus en modern appartement, gelegen in een gezellige buurt — wachtend op zijn nieuwe eigenaars.
       </p>
 
       <!-- Info row -->
-      <div class="grid grid-cols-2 gap-4 md:grid-cols-4 mb-8 text-gray-200">
+      <div class="grid grid-cols-2 gap-4 md:grid-cols-5 mb-8 text-gray-200">
         <div class="flex flex-col items-center">
           <Bed size={28} class="mb-1" />
           <span class="font-semibold">2 slaapkamers</span>
@@ -39,6 +39,11 @@
           <Square size={28} class="mb-1" />
           <span class="font-semibold">14 m²</span>
           <span class="text-xs">terras</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <Tag size={28} class="mb-1 text-green-400" />
+          <span class="font-semibold">€ 310.000</span>
+          <span class="text-xs">Vraagprijs</span>
         </div>
       </div>
 
