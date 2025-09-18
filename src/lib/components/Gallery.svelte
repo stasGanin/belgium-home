@@ -23,7 +23,8 @@
     { label: "Woonkamer", icon: Sofa, src: ["/images/livingRoom_1.jpg", "/images/livingRoom_2.jpg"] },
     { label: "Ingang", icon: LayoutDashboard, src: ["/images/lobby_1.jpg", "/images/lobby_2.jpg", "/images/lobby_3.jpg"] },
 
-    { label: "Garage", icon: DoorOpen, src: ["/images/garage_1.jpg", "/images/garage_2.jpg"] },
+    { label: "Garage", icon: DoorOpen, src: ["/images/garage_1.jpg", "/images/garage_2.webp"] },
+    
 
     { label: "Inkomhal", icon: LayoutDashboard, src: ["/images/corridor_1.jpg", "/images/corridor_2.jpg", "/images/corridor_3.jpg", "/images/corridor_4.jpg"] },
     { label: "Centrale verwarming en wasplaats", icon: LayoutDashboard, src: ["/images/boilerRoom_1.jpg", "/images/boilerRoom_2.jpg"] },
@@ -59,19 +60,20 @@
   <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-4 gap-8 items-start">
     <!-- Knoppen links -->
     <div class="flex flex-col gap-4 md:col-span-1 max-h-[600px] overflow-y-auto pr-2">
-      {#each images as category}
-        <button
-          on:click={() => selectCategory(category)}
-          class="w-full flex items-center gap-3 px-4 py-3 rounded-xl shadow-md transition text-left
-          {active.label === category.label 
-            ? 'bg-gradient-to-r from-blue-100 to-blue-200 text-blue-800' 
-            : 'bg-white hover:bg-gray-100'}"
-        >
-          <svelte:component this={category.icon} size={22} />
-          <span class="font-medium">{category.label}</span>
-        </button>
-      {/each}
-    </div>
+  {#each images as category}
+    <button
+      on:click={() => selectCategory(category)}
+      class="w-full flex items-center gap-3 px-4 py-3 rounded-xl shadow-md transition text-left
+      {active.label === category.label 
+        ? 'bg-gradient-to-r from-blue-100 to-blue-200 text-blue-800' 
+        : 'bg-white hover:bg-gray-100'}"
+    >
+      <svelte:component this={category.icon} size={22} />
+      <span class="font-medium">{category.label}</span>
+    </button>
+  {/each}
+</div>
+
 
     <!-- Foto rechts -->
     <div class="md:col-span-3 flex justify-center relative">
