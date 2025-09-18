@@ -1,2 +1,5 @@
 @import "tailwindcss";
 /* force rebuild */
+.force-rebuild {
+  display: none;
+}
