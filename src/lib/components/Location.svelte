@@ -30,6 +30,7 @@
         allowfullscreen=""
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
+        title="Locatie kaart van Urselseweg 3, 9910 Knesselare, België"
       ></iframe>
     </div>
   </div>

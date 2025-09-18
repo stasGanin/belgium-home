@@ -39,26 +39,28 @@
       on:keydown={handleKeydown}
     >
       <div
-        class="relative max-w-6xl w-full h-full flex justify-center overflow-y-auto p-8"
-        on:click|stopPropagation
-      >
-        <!-- Grote afbeelding -->
-        <img
-          src="/images/plan.jpg"
-          alt="Plattegrond van de woning"
-          class="max-w-full h-auto rounded-xl shadow-xl"
-          style="max-height: none;"
-        />
+  role="presentation"
+  class="relative max-w-6xl w-full h-full flex justify-center overflow-y-auto p-8"
+  on:click|stopPropagation
+>
+  <!-- Grote afbeelding -->
+  <img
+    src="/images/plan.jpg"
+    alt="Plattegrond van de woning"
+    class="max-w-full h-auto rounded-xl shadow-xl"
+    style="max-height: none;"
+  />
 
-        <!-- Sluitknop -->
-        <button
-          type="button"
-          class="fixed top-6 right-6 bg-white/80 hover:bg-white text-black rounded-full p-2 shadow-md"
-          on:click={() => (isOpen = false)}
-        >
-          ✕
-        </button>
-      </div>
+  <!-- Sluitknop -->
+  <button
+    type="button"
+    class="fixed top-6 right-6 bg-white/80 hover:bg-white text-black rounded-full p-2 shadow-md"
+    on:click={() => (isOpen = false)}
+  >
+    ✕
+  </button>
+</div>
+
     </div>
   {/if}
 </section>
