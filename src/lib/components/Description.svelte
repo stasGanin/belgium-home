@@ -15,5 +15,17 @@
       Dit appartement is een perfecte combinatie van stijlvolle afwerking,
       moderne technieken en duurzaam wooncomfort.
     </p>
+
+    <!-- Scores row -->
+    <div class="grid grid-cols-2 gap-6 mt-10 text-center">
+      <div class="p-6 border rounded-xl shadow-sm bg-gray-50">
+        <span class="block text-xl font-semibold mb-2">G-score</span>
+        <span class="text-3xl font-extrabold text-green-500">A</span>
+      </div>
+      <div class="p-6 border rounded-xl shadow-sm bg-gray-50">
+        <span class="block text-xl font-semibold mb-2">P-score</span>
+        <span class="text-3xl font-extrabold text-green-500">A</span>
+      </div>
+    </div>
   </div>
 </section>

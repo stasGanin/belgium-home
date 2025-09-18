@@ -21,7 +21,7 @@
       </p>
 
       <!-- Info row -->
-      <div class="grid grid-cols-2 gap-4 md:grid-cols-4 mb-8 text-gray-200">
+      <div class="grid grid-cols-2 gap-4 md:grid-cols-5 mb-8 text-gray-200">
         <div class="flex flex-col items-center">
           <Bed size={28} class="mb-1" />
           <span class="font-semibold">2 slaapkamers</span>
@@ -39,6 +39,11 @@
           <Square size={28} class="mb-1" />
           <span class="font-semibold">14 m²</span>
           <span class="text-xs">terras</span>
+        </div>
+        <!-- EPC -->
+        <div class="flex flex-col items-center">
+          <span class="text-3xl font-extrabold text-green-400 mb-1">B</span>
+          <span class="font-semibold">EPC</span>
         </div>
       </div>
 

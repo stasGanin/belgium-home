@@ -13,23 +13,22 @@
   } from "lucide-svelte";
 
   const images = [
-    { label: "Slaapkamer 1", icon: BedDouble, src: ["/images/bedroom1.webp", "/images/bedroom1_1.webp"] },
-    { label: "Slaapkamer 2", icon: BedDouble, src: ["/images/bedroom2.webp"] },
-    { label: "Keuken", icon: Home, src: ["/images/kitchen.webp"] },
+    { label: "Slaapkamer 1", icon: BedDouble, src: ["/images/bedroom1.jpg", "/images/bedroom1_1.jpg"] },
+    { label: "Slaapkamer 2", icon: BedDouble, src: ["/images/bedroom2.jpg"] },
+    { label: "Keuken", icon: Home, src: ["/images/kitchen.jpg"] },
 
-    { label: "Badkamer", icon: Bath, src: ["/images/masterBathroom_1.webp", "/images/masterBathroom_2.webp", "/images/masterBathroom_3.webp"] },
-    { label: "Toilet", icon: Bath, src: ["/images/guestToilet.webp"] },
+    { label: "Badkamer", icon: Bath, src: ["/images/masterBathroom_1.jpg", "/images/masterBathroom_2.jpg", "/images/masterBathroom_3.jpg"] },
+    { label: "Toilet", icon: Bath, src: ["/images/guestToilet.jpg"] },
 
-    { label: "Woonkamer", icon: Sofa, src: ["/images/livingRoom_1.webp", "/images/livingRoom_2.webp"] },
-    { label: "Ingang", icon: LayoutDashboard, src: ["/images/lobby_1.webp", "/images/lobby_2.webp", "/images/lobby_3.webp"] },
+    { label: "Woonkamer", icon: Sofa, src: ["/images/livingRoom_1.jpg", "/images/livingRoom_2.jpg"] },
+    { label: "Ingang", icon: LayoutDashboard, src: ["/images/lobby_1.jpg", "/images/lobby_2.jpg", "/images/lobby_3.jpg"] },
 
-    { label: "Garage", icon: DoorOpen, src: ["/images/garage_1.webp", "/images/garage_2.webp"] },
-    
+    { label: "Garage", icon: DoorOpen, src: ["/images/garage_1.jpg", "/images/garage_2.jpg"] },
 
-    { label: "Inkomhal", icon: LayoutDashboard, src: ["/images/corridor_1.webp", "/images/corridor_2.webp", "/images/corridor_3.webp", "/images/corridor_4.webp"] },
-    { label: "Centrale verwarming en wasplaats", icon: LayoutDashboard, src: ["/images/boilerRoom_1.webp", "/images/boilerRoom_2.webp"] },
+    { label: "Inkomhal", icon: LayoutDashboard, src: ["/images/corridor_1.jpg", "/images/corridor_2.jpg", "/images/corridor_3.jpg", "/images/corridor_4.jpg"] },
+    { label: "Centrale verwarming en wasplaats", icon: LayoutDashboard, src: ["/images/boilerRoom_1.jpg", "/images/boilerRoom_2.jpg"] },
 
-    { label: "Terras", icon: Sun, src: ["/images/terrace.webp"] },
+    { label: "Terras", icon: Sun, src: ["/images/terrace.jpg"] },
     { label: "Straatkant", icon: Trees, src: ["/images/roadSideH.jpg"] },
   ];
 
@@ -60,20 +59,19 @@
   <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-4 gap-8 items-start">
     <!-- Knoppen links -->
     <div class="flex flex-col gap-4 md:col-span-1 max-h-[600px] overflow-y-auto pr-2">
-  {#each images as category}
-    <button
-      on:click={() => selectCategory(category)}
-      class="w-full flex items-center gap-3 px-4 py-3 rounded-xl shadow-md transition text-left
-      {active.label === category.label 
-        ? 'bg-gradient-to-r from-blue-100 to-blue-200 text-blue-800' 
-        : 'bg-white hover:bg-gray-100'}"
-    >
-      <svelte:component this={category.icon} size={22} />
-      <span class="font-medium">{category.label}</span>
-    </button>
-  {/each}
-</div>
-
+      {#each images as category}
+        <button
+          on:click={() => selectCategory(category)}
+          class="w-full flex items-center gap-3 px-4 py-3 rounded-xl shadow-md transition text-left
+          {active.label === category.label 
+            ? 'bg-gradient-to-r from-blue-100 to-blue-200 text-blue-800' 
+            : 'bg-white hover:bg-gray-100'}"
+        >
+          <svelte:component this={category.icon} size={22} />
+          <span class="font-medium">{category.label}</span>
+        </button>
+      {/each}
+    </div>
 
     <!-- Foto rechts -->
     <div class="md:col-span-3 flex justify-center relative">
