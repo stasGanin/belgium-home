@@ -8,7 +8,7 @@
   style="background-image: url('/images/roadSide.jpg'); background-size: cover; background-position: center;"
 >
   <!-- Gradiënt overlay -->
-  <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/70"></div>
+  <div class="absolute inset-0 bg-gradient-to-b from-black/20 via-black/20 to-black/20"></div>
 
   <!-- Content -->
   <div class="relative z-10 px-6 max-w-3xl text-center">
@@ -21,7 +21,7 @@
       </p>
 
       <!-- Info row -->
-      <div class="grid grid-cols-2 gap-4 md:grid-cols-5 mb-8 text-gray-200">
+      <div class="grid grid-cols-2 gap-4 md:grid-cols-4 mb-8 text-gray-200">
         <div class="flex flex-col items-center">
           <Bed size={28} class="mb-1" />
           <span class="font-semibold">2 slaapkamers</span>
@@ -40,10 +40,17 @@
           <span class="font-semibold">14 m²</span>
           <span class="text-xs">terras</span>
         </div>
+      </div>
+
+      <!-- Price block -->
+      <div class="mb-8 text-center">
         <div class="flex flex-col items-center">
-          <Tag size={28} class="mb-1 text-green-400" />
-          <span class="font-semibold">€ 310.000</span>
-          <span class="text-xs">Vraagprijs</span>
+          <Tag size={36} class="mb-2 text-green-400" />
+          <span class="text-3xl md:text-4xl font-extrabold text-green-400">€ 310.000</span>
+          <span class="text-sm text-gray-200">Vraagprijs</span>
+          <span class="text-sm mt-2 text-gray-300 italic">
+            Optie: ruilen met een huis in dezelfde prijscategorie
+          </span>
         </div>
       </div>
 

@@ -1,8 +1,13 @@
 <section id="location" class="relative py-16 bg-gray-100 text-gray-800">
   <div class="max-w-5xl mx-auto px-6 text-center">
     <h2 class="text-3xl md:text-4xl font-bold mb-4">Locatie</h2>
-    <p class="text-lg mb-6">
+    <p class="text-lg mb-4">
       Gelegen in een gezellige en rustige buurt, met vlotte verbindingen en voorzieningen in de nabijheid.
+    </p>
+
+    <!-- Adres -->
+    <p class="text-xl font-semibold mb-6">
+      📍 Urselseweg 3, 9910 Knesselare, België
     </p>
 
     <!-- Google Maps link -->
@@ -12,7 +17,7 @@
       rel="noopener noreferrer"
       class="inline-flex items-center gap-2 px-6 py-3 mb-8 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl shadow-lg transition"
     >
-      📍 Bekijk op Google Maps
+      Bekijk op Google Maps
     </a>
 
     <!-- Embedded Google Map -->

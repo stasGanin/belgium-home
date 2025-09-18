@@ -1,4 +1,4 @@
-<section id="omschrijving" class="py-16 bg-white text-gray-800">
+<section id="description" class="py-16 bg-white text-gray-800">
   <div class="max-w-4xl mx-auto px-6">
     <h2 class="text-3xl md:text-4xl font-bold mb-6">Omschrijving</h2>
     <p class="text-lg mb-6 leading-relaxed">
