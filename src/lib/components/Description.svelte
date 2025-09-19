@@ -4,7 +4,7 @@
     <p class="text-lg mb-6 leading-relaxed">
       Dit prachtige appartement onderscheidt zich door zijn duurzame constructie,
       de uitstekende materiaalkeuze en een afwerking tot in de kleinste details.
-      Alles is ontworpen voor maximaal comfort, veiligheid en elegantie.
+      Alles is ontworpen met oog voor comfort, veiligheid en een verfijnde smaakvolle afwerking.
     </p>
     <p class="text-lg mb-6 leading-relaxed">
       <strong>Indeling:</strong> Inkom, toilet, eetruimte, zitruimte, keuken, berging,

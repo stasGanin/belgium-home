@@ -15,7 +15,7 @@
 <header class="fixed top-0 left-0 w-full bg-white/80 backdrop-blur-md shadow z-50">
   <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
     <!-- Logo -->
-    <a href="#hero" class="text-2xl font-bold text-blue-600">Elegant Wonen</a>
+    <a href="#hero" class="text-2xl font-bold text-blue-600">Modern Comfort</a>
 
     <!-- Desktop nav -->
     <nav class="hidden md:flex gap-8">
