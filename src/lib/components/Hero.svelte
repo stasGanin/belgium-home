@@ -1,5 +1,5 @@
 <script>
-  import { Phone, Bed, Bath, Ruler, Square, Tag } from "lucide-svelte";
+  import { Phone, Bed, Bath, Ruler, Square, Tag, Calendar } from "lucide-svelte";
 </script>
 
 <section
@@ -25,7 +25,7 @@
       </p>
 
       <!-- Статы -->
-      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 mb-8 text-gray-200">
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 mb-8 text-gray-200">
         <div class="flex flex-col items-center text-center">
           <Bed size={28} class="mb-1" />
           <span class="font-semibold">2 slaapkamers</span>
@@ -43,6 +43,10 @@
           <Square size={28} class="mb-1" />
           <span class="font-semibold">14 m²</span>
           <span class="text-xs">terras</span>
+        </div>
+        <div class="flex flex-col items-center text-center">
+          <Calendar size={28} class="mb-1" />
+          <span class="font-semibold">Bouwjaar 2007</span>
         </div>
         <div class="flex flex-col items-center text-center">
           <span class="text-2xl sm:text-3xl font-extrabold text-green-400 mb-1">B</span>
