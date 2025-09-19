@@ -23,7 +23,7 @@
     { label: "Woonkamer", icon: Sofa, src: ["/images/livingRoom_1.jpg", "/images/livingRoom_2.jpg"] },
     { label: "Ingang", icon: LayoutDashboard, src: ["/images/lobby_1.jpg", "/images/lobby_2.jpg", "/images/lobby_3.jpg"] },
 
-    { label: "Garage", icon: DoorOpen, src: ["/images/garage_1.jpg", "/images/garage_2.webp"] },
+    { label: "Garage", icon: DoorOpen, src: ["/images/garage_1.jpg", "/images/garage_2.jpg"] },
     
 
     { label: "Inkomhal", icon: LayoutDashboard, src: ["/images/corridor_1.jpg", "/images/corridor_2.jpg", "/images/corridor_3.jpg", "/images/corridor_4.jpg"] },
