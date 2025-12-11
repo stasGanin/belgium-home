@@ -58,7 +58,7 @@
       <div class="mb-8">
         <Tag size={32} class="mb-2 text-green-400 mx-auto" />
         <p class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-green-400">
-          € 310.000
+          € 299.000
         </p>
         <p class="text-sm text-gray-200">Vraagprijs</p>
         <p class="text-xs sm:text-sm mt-2 text-gray-300 italic">
